@@ -1,0 +1,37 @@
+<html>
+    
+<body>
+    <script>
+        class Rectangle {
+            constructor(height,width, color) {
+                this.height = height;
+                this.width = width;
+            }
+            getHeight() {
+                return this.height;
+            }
+
+            getWidth(){
+                return this.width;
+            }
+
+            getArea() {
+                return this.height * this.width;
+            }
+            getPerimeter(){
+                return this.height*2 + this.width*2;
+            }
+        }
+
+        let rectangle = new Rectangle(4,3)
+        let height = rectangle.getHeight();
+        let width = rectangle.getWidth();
+        let area = rectangle.getArea();
+        let perimeter = rectangle.getPerimeter();
+
+        console.log(area);
+        console.log(perimeter);
+    </script>
+</body>
+
+</html>
